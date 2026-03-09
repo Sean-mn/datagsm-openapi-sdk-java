@@ -1,5 +1,7 @@
 package team.themoment.datagsm.sdk.openapi.model;
 
+import java.util.Optional;
+
 /**
  * 동아리 부원 정보
  */
@@ -37,16 +39,16 @@ public class ParticipantInfo {
         this.email = email;
     }
 
-    public Integer getStudentNumber() {
-        return studentNumber;
+    public Optional<Integer> getStudentNumber() {
+        return Optional.ofNullable(studentNumber);
     }
 
     public void setStudentNumber(Integer studentNumber) {
         this.studentNumber = studentNumber;
     }
 
-    public Major getMajor() {
-        return major;
+    public Optional<Major> getMajor() {
+        return Optional.ofNullable(major);
     }
 
     public void setMajor(Major major) {

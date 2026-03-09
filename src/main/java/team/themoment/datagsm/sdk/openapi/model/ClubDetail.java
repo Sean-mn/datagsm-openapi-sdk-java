@@ -2,6 +2,7 @@ package team.themoment.datagsm.sdk.openapi.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 동아리 상세 정보
@@ -39,8 +40,12 @@ public class ClubDetail {
         this.type = type;
     }
 
-    public ParticipantInfo getLeader() {
-        return leader;
+    /**
+     * 동아리 부장 정보를 반환합니다.
+     * 부장이 자퇴 또는 졸업 처리된 경우 비어 있을 수 있습니다.
+     */
+    public Optional<ParticipantInfo> getLeader() {
+        return Optional.ofNullable(leader);
     }
 
     public void setLeader(ParticipantInfo leader) {

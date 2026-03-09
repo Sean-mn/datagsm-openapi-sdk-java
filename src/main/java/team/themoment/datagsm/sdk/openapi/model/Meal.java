@@ -3,6 +3,7 @@ package team.themoment.datagsm.sdk.openapi.model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 급식 정보
@@ -88,40 +89,40 @@ public class Meal {
         this.mealMenu = mealMenu;
     }
 
-    public List<String> getMealAllergyInfo() {
-        return mealAllergyInfo;
+    public Optional<List<String>> getMealAllergyInfo() {
+        return Optional.ofNullable(mealAllergyInfo);
     }
 
     public void setMealAllergyInfo(List<String> mealAllergyInfo) {
         this.mealAllergyInfo = mealAllergyInfo;
     }
 
-    public String getMealCalories() {
-        return mealCalories;
+    public Optional<String> getMealCalories() {
+        return Optional.ofNullable(mealCalories);
     }
 
     public void setMealCalories(String mealCalories) {
         this.mealCalories = mealCalories;
     }
 
-    public String getOriginInfo() {
-        return originInfo;
+    public Optional<String> getOriginInfo() {
+        return Optional.ofNullable(originInfo);
     }
 
     public void setOriginInfo(String originInfo) {
         this.originInfo = originInfo;
     }
 
-    public String getNutritionInfo() {
-        return nutritionInfo;
+    public Optional<String> getNutritionInfo() {
+        return Optional.ofNullable(nutritionInfo);
     }
 
     public void setNutritionInfo(String nutritionInfo) {
         this.nutritionInfo = nutritionInfo;
     }
 
-    public Integer getMealServeCount() {
-        return mealServeCount;
+    public Optional<Integer> getMealServeCount() {
+        return Optional.ofNullable(mealServeCount);
     }
 
     public void setMealServeCount(Integer mealServeCount) {
