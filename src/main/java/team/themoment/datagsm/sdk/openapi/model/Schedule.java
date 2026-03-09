@@ -3,6 +3,7 @@ package team.themoment.datagsm.sdk.openapi.model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 학사일정 정보
@@ -88,32 +89,32 @@ public class Schedule {
         this.eventName = eventName;
     }
 
-    public String getEventContent() {
-        return eventContent;
+    public Optional<String> getEventContent() {
+        return Optional.ofNullable(eventContent);
     }
 
     public void setEventContent(String eventContent) {
         this.eventContent = eventContent;
     }
 
-    public String getDayCategory() {
-        return dayCategory;
+    public Optional<String> getDayCategory() {
+        return Optional.ofNullable(dayCategory);
     }
 
     public void setDayCategory(String dayCategory) {
         this.dayCategory = dayCategory;
     }
 
-    public String getSchoolCourseType() {
-        return schoolCourseType;
+    public Optional<String> getSchoolCourseType() {
+        return Optional.ofNullable(schoolCourseType);
     }
 
     public void setSchoolCourseType(String schoolCourseType) {
         this.schoolCourseType = schoolCourseType;
     }
 
-    public String getDayNightType() {
-        return dayNightType;
+    public Optional<String> getDayNightType() {
+        return Optional.ofNullable(dayNightType);
     }
 
     public void setDayNightType(String dayNightType) {

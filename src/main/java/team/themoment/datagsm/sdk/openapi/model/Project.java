@@ -2,6 +2,7 @@ package team.themoment.datagsm.sdk.openapi.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 프로젝트 정보
@@ -39,8 +40,8 @@ public class Project {
         this.description = description;
     }
 
-    public Club getClub() {
-        return club;
+    public Optional<Club> getClub() {
+        return Optional.ofNullable(club);
     }
 
     public void setClub(Club club) {

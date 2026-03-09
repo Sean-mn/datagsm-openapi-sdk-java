@@ -1,5 +1,7 @@
 package team.themoment.datagsm.sdk.openapi.model;
 
+import java.util.Optional;
+
 /**
  * 학생 정보
  */
@@ -54,40 +56,40 @@ public class Student {
         this.email = email;
     }
 
-    public Integer getGrade() {
-        return grade;
+    public Optional<Integer> getGrade() {
+        return Optional.ofNullable(grade);
     }
 
     public void setGrade(Integer grade) {
         this.grade = grade;
     }
 
-    public Integer getClassNum() {
-        return classNum;
+    public Optional<Integer> getClassNum() {
+        return Optional.ofNullable(classNum);
     }
 
     public void setClassNum(Integer classNum) {
         this.classNum = classNum;
     }
 
-    public Integer getNumber() {
-        return number;
+    public Optional<Integer> getNumber() {
+        return Optional.ofNullable(number);
     }
 
     public void setNumber(Integer number) {
         this.number = number;
     }
 
-    public Integer getStudentNumber() {
-        return studentNumber;
+    public Optional<Integer> getStudentNumber() {
+        return Optional.ofNullable(studentNumber);
     }
 
     public void setStudentNumber(Integer studentNumber) {
         this.studentNumber = studentNumber;
     }
 
-    public Major getMajor() {
-        return major;
+    public Optional<Major> getMajor() {
+        return Optional.ofNullable(major);
     }
 
     public void setMajor(Major major) {
@@ -102,40 +104,40 @@ public class Student {
         this.role = role;
     }
 
-    public Integer getDormitoryFloor() {
-        return dormitoryFloor;
+    public Optional<Integer> getDormitoryFloor() {
+        return Optional.ofNullable(dormitoryFloor);
     }
 
     public void setDormitoryFloor(Integer dormitoryFloor) {
         this.dormitoryFloor = dormitoryFloor;
     }
 
-    public Integer getDormitoryRoom() {
-        return dormitoryRoom;
+    public Optional<Integer> getDormitoryRoom() {
+        return Optional.ofNullable(dormitoryRoom);
     }
 
     public void setDormitoryRoom(Integer dormitoryRoom) {
         this.dormitoryRoom = dormitoryRoom;
     }
 
-    public Club getMajorClub() {
-        return majorClub;
+    public Optional<Club> getMajorClub() {
+        return Optional.ofNullable(majorClub);
     }
 
     public void setMajorClub(Club majorClub) {
         this.majorClub = majorClub;
     }
 
-    public Club getJobClub() {
-        return jobClub;
+    public Optional<Club> getJobClub() {
+        return Optional.ofNullable(jobClub);
     }
 
     public void setJobClub(Club jobClub) {
         this.jobClub = jobClub;
     }
 
-    public Club getAutonomousClub() {
-        return autonomousClub;
+    public Optional<Club> getAutonomousClub() {
+        return Optional.ofNullable(autonomousClub);
     }
 
     public void setAutonomousClub(Club autonomousClub) {
